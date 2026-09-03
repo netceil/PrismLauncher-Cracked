@@ -1,9 +1,7 @@
 name: Build Application and Make Release
 
 on:
-  push:
-    tags:
-      - "*"
+  workflow_dispatch:
 
 permissions: {}
 

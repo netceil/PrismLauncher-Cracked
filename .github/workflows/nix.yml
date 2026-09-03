@@ -5,38 +5,6 @@ concurrency:
   cancel-in-progress: true
 
 on:
-  push:
-    branches:
-      - "develop"
-      - "release-*"
-    tags:
-      - "*"
-    paths:
-      # File types
-      - "**.cpp"
-      - "**.h"
-      - "**.java"
-      - "**.ui"
-      - "**.md"
-
-      # Build files
-      - "**.nix"
-      - "nix/**"
-      - "flake.lock"
-
-      # Directories
-      - "buildconfig/**"
-      - "cmake/**"
-      - "launcher/**"
-      - "libraries/**"
-      - "program_info/**"
-      - "tests/**"
-
-      # Files
-      - "CMakeLists.txt"
-
-      # Workflows
-      - ".github/workflows/nix.yml"
   pull_request:
     paths:
       # File types

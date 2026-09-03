@@ -1,9 +1,6 @@
 name: Update Flake Lockfile
 
 on:
-  schedule:
-    # run weekly on sunday
-    - cron: "0 0 * * 0"
   workflow_dispatch:
 
 permissions: {}
